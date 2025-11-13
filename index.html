@@ -1,1 +1,364 @@
-
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bea Rose Turns 18</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script defer="" src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#8B0000",
+                        "soft-dark-red": "#A05252",
+                        "background-light": "#FAF9F6",
+                        "background-dark": "#221010",
+                        "pastel-pink": "#FFD1DC",
+                        "deeper-pastel-pink": "#FBC4D3",
+                        "pastel-yellow": "#FFFACD",
+                        "text-light": "#333333",
+                        "text-dark": "#FAF9F6"
+                    },
+                    fontFamily: {
+                        "display": ["Noto Serif", "serif"],
+                        "script": ["Great Vibes", "cursive"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            font-size: inherit;
+        }
+        .invitation-bg {
+             background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FFD1DC' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+             background-color: #FFFACD;
+        }
+        .decorative-corner {
+            position: absolute;
+            width: 20%;
+            height: auto;
+            max-width: 150px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark font-display">
+<main>
+<section class="relative flex h-screen min-h-[600px] w-full flex-col items-center justify-center bg-cover bg-center bg-no-repeat" data-alt="An elegant, full-screen picture of the debutant, Bea Rose." style='background-image: linear-gradient(rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://images.unsplash.com/photo-1598072702588-4a6a6d691136?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wzNjAzNTV8MHwxfGFsbHx8fHx8fHx8fDE3MTU4OTg5MDJ8&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080");'>
+<div class="flex flex-col gap-4 text-center">
+<h1 class="font-script text-primary text-6xl drop-shadow-lg md:text-8xl">Bea Rose Turns 18</h1>
+<h2 class="text-white text-lg font-normal md:text-xl">Join us in celebrating a milestone.</h2>
+</div>
+</section>
+<div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+<section class="py-12 md:py-20" x-data="countdown('2025-12-12T00:00:00')" x-init="start()">
+<div class="text-center mb-8">
+<p class="text-lg">The celebration begins in...</p>
+</div>
+<div class="grid grid-cols-2 gap-4 text-center md:grid-cols-4">
+<div class="flex flex-col items-center gap-2">
+<div class="flex h-24 w-24 items-center justify-center rounded-xl bg-pastel-pink text-primary">
+<p class="text-4xl font-bold" x-text="days"></p>
+</div>
+<p class="text-lg font-medium">Days</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="flex h-24 w-24 items-center justify-center rounded-xl bg-pastel-pink text-primary">
+<p class="text-4xl font-bold" x-text="hours"></p>
+</div>
+<p class="text-lg font-medium">Hours</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="flex h-24 w-24 items-center justify-center rounded-xl bg-pastel-pink text-primary">
+<p class="text-4xl font-bold" x-text="minutes"></p>
+</div>
+<p class="text-lg font-medium">Minutes</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="flex h-24 w-24 items-center justify-center rounded-xl bg-pastel-pink text-primary">
+<p class="text-4xl font-bold" x-text="seconds"></p>
+</div>
+<p class="text-lg font-medium">Seconds</p>
+</div>
+</div>
+</section>
+</div>
+<section class="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+<div class="relative w-full aspect-[2/1] flex flex-col justify-center items-center p-8 md:p-12 text-center rounded-xl shadow-md invitation-bg overflow-hidden border-2 border-primary/20">
+<div class="z-10 flex flex-col items-center">
+<h2 class="font-script text-primary text-5xl md:text-7xl lg:text-8xl">You are Invited!</h2>
+<p class="mt-4 text-xl md:text-2xl lg:text-3xl text-text-light max-w-2xl">Please join Bea Rose</p>
+<div class="relative inline-block mt-4 text-primary">
+<svg class="w-24 h-24 md:w-28 md:h-28 text-pastel-pink" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg>
+<span class="absolute inset-0 flex items-center justify-center text-4xl md:text-5xl font-bold">18</span>
+</div>
+<p class="mt-6 font-script text-primary text-4xl md:text-5xl">Save the Date</p>
+<p class="mt-2 text-lg md:text-xl text-text-light/90">December 12, 2025 at 6:00 PM</p>
+</div>
+</div>
+</section>
+<section class="pb-12 md:pb-16 px-4 sm:px-6 lg:px-8">
+<div class="mx-auto max-w-2xl bg-pastel-pink/50 border-2 border-primary/20 p-12 md:p-16 text-center rounded-xl shadow-md min-h-[500px] flex flex-col justify-center">
+<h3 class="text-4xl font-script text-primary">Dress Code</h3>
+<p class="mt-2 text-xl md:text-2xl font-semibold text-text-light/90">semi formal</p>
+<div class="mt-8 aspect-[4/3] w-full max-w-md mx-auto rounded-lg bg-pastel-yellow/60 border border-dashed border-primary/30 flex items-center justify-center">
+<span class="text-text-light/50">Picture Placeholder</span>
+</div>
+</div>
+</section>
+<section class="py-12 md:py-16 px-4 sm:px-6 lg:px-8">
+<div class="w-full bg-pastel-yellow/50 border-2 border-primary/20 p-8 md:p-12 rounded-xl shadow-md flex flex-col md:flex-row items-center gap-8 md:gap-12">
+<div class="w-full md:w-1/3 flex-shrink-0">
+<img alt="A portrait of the debutant, Bea Rose." class="w-full h-full object-cover rounded-lg aspect-[3/4]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8e7D7UWRxTZZQYGVpblYVyH5ue4JPApijMVnqB5oKZxcHBLZtBEe5VecTM0MSm0XwW9cHgesKF1MK-X6dn2fymn17dtlWyZvkd0AIwBCeMSdeuG1xTf9t5qepmPvWsJBcpJmod9-s_GZT6Q-vZw-HK-ofJh_KGmSEayyqlJghfL45gk-rk1nO18KMNj8kTz4gr4lPf6IXLZEn9u7_cJsWcI4xM68mBSR5AnJHuba5tKPbzv7syZAGTmh5r5klbjR1PI9IdSeoaAc"/>
+</div>
+<div class="w-full md:w-2/3 flex justify-center items-center text-center md:text-left md:pl-8">
+<h2 class="font-script text-primary text-7xl md:text-8xl lg:text-9xl xl:text-[10rem]">The 18 Specials</h2>
+</div>
+</div>
+</section>
+<section class="w-full bg-pastel-pink/20 py-12 md:py-16">
+<div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+<h3 class="font-script text-primary text-6xl md:text-7xl">18 Roses</h3>
+<div class="mt-6 text-2xl md:text-3xl font-script text-text-light/90 space-y-2">
+<p>Juan dela Cruz</p>
+<p>Pedro Santos</p>
+<p>Andres Bonifacio</p>
+<p>Jose Rizal</p>
+<p>Emilio Aguinaldo</p>
+<p>Apolinario Mabini</p>
+<p>Antonio Luna</p>
+<p>Gregorio del Pilar</p>
+<p>Marcelo H. del Pilar</p>
+<p>Graciano Lopez Jaena</p>
+<p>Mariano Ponce</p>
+<p>Lapu-Lapu</p>
+<p>Rajah Sulayman</p>
+<p>Diego Silang</p>
+<p>Francisco Dagohoy</p>
+<p>Macario Sakay</p>
+<p>Miguel Malvar</p>
+<p>Artemio Ricarte</p>
+</div>
+</div>
+</section>
+<section class="w-full bg-pastel-yellow py-12 md:py-16">
+<div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+<h3 class="font-script text-primary text-6xl md:text-7xl">18 Bills</h3>
+<div class="mt-6 text-2xl md:text-3xl font-script text-text-light/90 space-y-2">
+<p>Maria Clara</p>
+<p>Gabriela Silang</p>
+<p>Melchora Aquino</p>
+<p>Teresa Magbanua</p>
+<p>Trinidad Tecson</p>
+<p>Agueda Kahabagan</p>
+<p>Leona Florentino</p>
+<p>Marcela Agoncillo</p>
+<p>Gregoria de Jesus</p>
+<p>Teodora Alonso</p>
+<p>Josefa Llanes Escoda</p>
+<p>Marina Dizon</p>
+<p>Salome</p>
+<p>Sisa</p>
+<p>Princesa Urduja</p>
+<p>Tandang Sora</p>
+<p>Henerala Agueda</p>
+<p>Ina ng Biak-na-Bato</p>
+</div>
+</div>
+</section>
+<section class="w-full bg-soft-dark-red py-12 md:py-16">
+<div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+<h3 class="font-script text-white text-6xl md:text-7xl">18 Treasures</h3>
+<div class="mt-6 text-2xl md:text-3xl font-script text-pastel-yellow space-y-2">
+<p>Juliana Arellano</p>
+<p>Patrocinio Gamboa</p>
+<p>Nazaria Lagos</p>
+<p>Lorenza Agoncillo</p>
+<p>Delfina Herbosa de Natividad</p>
+<p>Rosario Villaruel</p>
+<p>Espereanza Limjap</p>
+<p>Magdalena Leones</p>
+<p>Remedios Gomez-Paraiso</p>
+<p>Nieves Fernandez</p>
+<p>Josefa Capistrano</p>
+<p>Felipa Culala</p>
+<p>Valeria "Yay" Panlilio</p>
+<p>Gliceria Marella Villavicencio</p>
+<p>Clemencia Lopez</p>
+<p>Librada Avelino</p>
+<p>Carmen de Luna</p>
+<p>Concepcion Felix</p>
+</div>
+</div>
+</section>
+<section class="w-full bg-pastel-pink/20 py-12 md:py-16">
+<div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+<h3 class="font-script text-primary text-6xl md:text-7xl">18 Candles</h3>
+<div class="mt-6 text-2xl md:text-3xl font-script text-text-light/90 space-y-2">
+<p>Clara Barton</p>
+<p>Florence Nightingale</p>
+<p>Marie Curie</p>
+<p>Rosa Parks</p>
+<p>Amelia Earhart</p>
+<p>Mother Teresa</p>
+<p>Eleanor Roosevelt</p>
+<p>Frida Kahlo</p>
+<p>Jane Austen</p>
+<p>Harriet Tubman</p>
+<p>Susan B. Anthony</p>
+<p>Sacagawea</p>
+<p>Malala Yousafzai</p>
+<p>Anne Frank</p>
+<p>Helen Keller</p>
+<p>Joan of Arc</p>
+<p>Queen Elizabeth I</p>
+<p>Cleopatra</p>
+</div>
+</div>
+</section>
+<section class="w-full bg-background-light py-12 md:py-20" x-data="{ open: false, imgSrc: '' }">
+<div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center">
+<h3 class="font-script text-primary text-6xl md:text-7xl">Gallery</h3>
+<div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-4">
+<div @click="open = true; imgSrc = $event.target.src" class="cursor-pointer group overflow-hidden">
+<img alt="Bea Rose in a beautiful pink gown." class="aspect-square w-full object-cover rounded-lg border-4 border-pastel-pink p-1.5 transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwt64QHWGCQbVqXTiIK0pcKLu3wLI09QeJ-HEIe3b0IksKWlKk0LXAWxjwm-a2LiSv-lG0T7p0hwY-q2b2pYuBxNXD3PBcQI5l2v4DceDncJ111i2HMBNrpkImvLCTabg57eUj1I9uGKJ5i4U4Bz27-NFGaxVfhdwviV69DT0MLqlr1CdFDYUeXnuFk_RrJOFShGHogkxClGLeuim1lFR4byWKiKSMmkyY8tpt-Bihkh7XQccL7lKbdANLCaEO00ckt172sDpwhuw"/>
+</div>
+<div @click="open = true; imgSrc = $event.target.src" class="cursor-pointer group overflow-hidden md:row-span-2">
+<img alt="A smiling portrait of Bea Rose." class="aspect-[2/3] w-full h-full object-cover rounded-lg border-4 border-pastel-yellow p-1.5 transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsYEtUA8xXop8wfnxaHc2Lra3dK9zOlTPpNmxg3z1393wz-UZ0zJLrpdGbIWDSrtH1IxBuuyTv9yLcnB83KHqhfefVdAcyYgzVBtTs5_pf2xC6DzXqNGYmbZbdFaNVVQAbAF7Xyt0bh0O0YhYNSdxiV56xL87B4CnSamYyQiNtfggEXZUNKaZ_mYHncNGXZdAAWiplKAmiI9_idE7byplKPPVQ9usMpXHNCFgZ-NMNcQlHZmV0AL9AycQ0kurxMbwKV-1f6b-6270"/>
+</div>
+<div @click="open = true; imgSrc = $event.target.src" class="cursor-pointer group overflow-hidden">
+<img alt="Bea Rose laughing with friends." class="aspect-square w-full object-cover rounded-lg border-4 border-pastel-yellow p-1.5 transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWCsMMit6SI2OYFZqXuj7LRwaII40nRLCmOJx6wtbs29WGJqcmoijD0bYINvcUAa-eh5nMveXhKJWVz2pfXPsmaZZ56ikzh1MgJ9GgbNBEJYxAe4EcGd3SJPaFW1V4YAtnlwwaH5l50hG-v-W_Or-Kr32mFx0NwwIqkERqav5bd1sAsJzur0b45f6qPsSbqk465fj_w-YDftWpQPxm9bDt0eDkFW-1D-KD5HSOKl6-52yuBVa_EAMXQF1fiJhVThm4fYFa2ltabCY"/>
+</div>
+<div @click="open = true; imgSrc = $event.target.src" class="cursor-pointer group overflow-hidden">
+<img alt="A candid photo of Bea Rose." class="aspect-square w-full object-cover rounded-lg border-4 border-pastel-pink p-1.5 transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNgrP_jqgGNsWVCAbIs5Fyd66GA5rTDTUo34DTIsyi9-48sjBizOnaa632WxsgWDMBbJ35NhYoRnXtAF5GqSVYxiX94I7mCzFtjq3iYQ3fzk2XRi_3WpqxOG7CKsIHEyBlmP-qtFafqzZxt8anE1OJRWMk16CqFgvCd5T7GrqOyvCd5E6nbkir0ezGKDbbssTzeD6TQ9ezM9-cak4XrvfWaWDBnDbGG0Zyn-jwU3pVJSJ2GSI3TS0PoFU9FRvjFpP6xkbWMCL41NU"/>
+</div>
+<div @click="open = true; imgSrc = $event.target.src" class="cursor-pointer group overflow-hidden">
+<img alt="Bea Rose posing elegantly." class="aspect-square w-full object-cover rounded-lg border-4 border-pastel-pink p-1.5 transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFXdaK32lfGEli0W-W9cVWw0aG0fL0Or6sUaTifC65SS1pwiSxZM7CwALG6boiSSwnxxIAWYrpgStl_ovY6VNfQmZVaissKerCxHW3ah1u25PB0gkOBztCIb-wlrcW0nyasrXVwj0ECR2X_p3c2fBk9rPqHe_AmWt53NANyqzgjN31YiELeLklvfBavW9WHgklXUUiPWJ_FkmMIXUsTbx-fHB7uceGWk95uQ7Xtu2PWRv181Ln2HV2WX51NA-G24erDYXoa0GoUWo"/>
+</div>
+<div @click="open = true; imgSrc = $event.target.src" class="cursor-pointer group overflow-hidden col-span-2 md:col-span-1">
+<img alt="A photo from Bea Rose's childhood." class="aspect-square w-full object-cover rounded-lg border-4 border-pastel-yellow p-1.5 transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBud8WIrbSFUtEhyQem87kyIUG1Q6RkuaJ-eGReWPIWg0HU1tRObLsq17v0jQL8aXVpXn5htapeS2J8qKWaFJjBSN-65EYHcYWArSpjVAZ3hblX56w5Flxcp6JYPmUbVPINQP9Xzmx3GErZT6X_Ca6-5tha0jhjKr3Gves6ky1aipW8WVPDfy_TIfG4D-izd_g9KGUGRxu7QD9LSzuV__usBiocogNsElJnHVcwHO7TAGaIGQ4QDjZq5UTPvPsyLzO46FKKIMtYY5o"/>
+</div>
+<div @click="open = true; imgSrc = $event.target.src" class="cursor-pointer group overflow-hidden">
+<img alt="Bea Rose celebrating her birthday." class="aspect-square w-full object-cover rounded-lg border-4 border-pastel-pink p-1.5 transition-transform duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgFT2nsxgJNHDyJc3ZOVRV0lnvxHsXMKGutGVcO411DDFbNa0PioiwtnyK7GWiNRWZNXARUjGgNw3DtJxPUuJoNWdJbr0OZYGLYLAXWYkgyaULKVtedVwCJi4VzrNBcyCvGX9OLU3vku0HC3TiMw60JwKbkU9_ZHoLLdAY_1s-omEztPZcJw2Id-uNYMB-KfTaofrniD0GVVbG4bHQuRaCL49WXCosEr47TPdzhXHA_7hpYi2wEWJZhs0aEW4Yp7YuHthGaXqnnWs"/>
+</div>
+</div>
+</div>
+<div @click.self="open = false" @keydown.escape.window="open = false" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4" style="display: none;" x-cloak="" x-show="open">
+<div class="relative max-w-3xl max-h-[90vh] bg-background-light p-4 rounded-lg shadow-xl">
+<button @click="open = false" class="absolute -top-3 -right-3 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-primary text-white">×</button>
+<img :src="imgSrc" alt="Enlarged gallery image" class="rounded-md object-contain max-h-[calc(90vh-2rem)]"/>
+</div>
+</div>
+</section>
+<div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+<section class="py-12 md:py-16">
+<div class="flex flex-col gap-12 md:flex-row md:items-start">
+<div class="w-full md:w-1/3">
+<img alt="A portrait of the debutant, Bea Rose." class="w-full rounded-xl object-cover" data-alt="A portrait of the debutant, Bea Rose." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAulNDDbrCxE_PhoFWdwlcZvDBJbpVhP6v434Ule-BRUCWJ154_uALWPKMDmqV-0LB1G4XIn4wdlFsDVhGL-orIBfqNODSpXFj_GudbbXqOqcTdM5ONlwiW9QxPDKhl0uF3YkowmUdpNO5m5TAF5ed_h0pwOrI_vHR1ySm4h4LukXM2QH_4V-IpYQqtXvsO2t7C8K-lWSCIASLEFQ7jqTv84LE7AzNc4KiVILYH0A7S766iY2KsOY-MN8RW4vYbnNcok1yZO4wrYWo"/>
+</div>
+<div class="w-full md:w-2/3">
+<h2 class="text-primary text-4xl font-bold text-center md:text-left">THE 18 SPECIALS</h2>
+<div class="mt-8 space-y-4">
+<details class="group rounded-lg bg-pastel-pink p-4" open="">
+<summary class="cursor-pointer text-lg font-semibold text-primary">18 Roses</summary>
+<p class="mt-2 text-text-light">Juan dela Cruz, Pedro Santos, Andres Bonifacio, Jose Rizal...</p>
+</details>
+<details class="group rounded-lg bg-pastel-yellow p-4">
+<summary class="cursor-pointer text-lg font-semibold text-primary">18 Bills</summary>
+<p class="mt-2 text-text-light">Maria Clara, Gabriela Silang, Melchora Aquino, Teresa Magbanua...</p>
+</details>
+<details class="group rounded-lg bg-pastel-pink p-4">
+<summary class="cursor-pointer text-lg font-semibold text-primary">18 Treasures</summary>
+<p class="mt-2 text-text-light">Emilio Aguinaldo, Apolinario Mabini, Antonio Luna, Gregorio del Pilar...</p>
+</details>
+<details class="group rounded-lg bg-pastel-yellow p-4">
+<summary class="cursor-pointer text-lg font-semibold text-primary">18 Candles</summary>
+<p class="mt-2 text-text-light">Leona Florentino, Tandang Sora, Trinidad Tecson, Marcela Agoncillo...</p>
+</details>
+</div>
+</div>
+</div>
+</section>
+<section class="py-12 md:py-16">
+<h2 class="text-primary text-4xl font-bold text-center">Gallery</h2>
+<div class="mt-8 grid grid-cols-2 gap-4 md:grid-cols-3">
+<img class="aspect-square w-full rounded-lg object-cover" data-alt="Bea Rose posing happily." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARl3HKoNHGvOm_gvtZCdu7zF8ryECy8z164gBPPRTCcu0df5CBfvEfhjx8SPwvIAOJeULQA4UbzRc2B7FEcNBcUE-Fi22PyVzJ3UrGqHBBpYF2EqNjUrP23ld0goH7mjHk1BFqWFsPGwZ9p_P764YfxNYLOZkO9MgiPqjZo5dI2PLg_7lM-RSaMwyT5AkXhJ2gEeffQHaMXTe-V_65ukT4KavhG3YoGEMlIEAZA45BjFSRvt9UARVDKf0EXJ5JXqV23WV4mSWGzCU"/>
+<img class="aspect-square w-full rounded-lg object-cover" data-alt="A candid photo of Bea Rose laughing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKUy2Zj8bvO0-s8e7h4o12A80aQBrqlFY8a7c2HyRF6P0oO-XORmlUtgq-U02Jo5rTbO6CaRGWqn7LxFlBHO_8mmHTtRO8gP-S0K6Dv8PzP41MsKHpVhhJc3iqPmxLue9YLK8IdOk27hCNMwVinTQK6XmiPk9WWWIwdhFISF1zlwPTDD_0FSgEQLZOGw3xE-4yhz__aQ0uR7i6qsGoLb8OFASzSr3Xa1XlFkh_nXnVz-rD-b4P9FD3pu5wA-oYQ6XzUfgVvRg0r3E"/>
+<img class="aspect-square w-full rounded-lg object-cover" data-alt="Bea Rose with her family." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvhwZIC1ZqN5zRDt_Elz1Kxgow8kYLoPJtWnPayLifRW0hBH5l9gUaGJi0-3ZczbEB4j96A00OnsLOXu2BEk0Qnk-QbQqo-NPWYOIOSgGdGBEelzC9jx21fiNFuW59c_F1ioMw7ZFrItBMnp3y6bALNr2s8Zhqj_3xYfXV_c-IkpW-d1xZ4iVspEw2jBnwPYlR71G9AF5I_WzzS5GTLYGUDaK6z2TG_hZ6Vr17bXzIa6Gg2OueLwC9iU79w3mqXUlUAcWGuVPhcUY"/>
+<img class="aspect-square w-full rounded-lg object-cover md:col-start-2" data-alt="Bea Rose blowing out birthday candles." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADdtItzg6m1Ol_XlFRweRNnyPxzdsEFcZyzysScSHuRasgSLsI0KoQZS_fqPqtBkQ3ZxByfdZk7kP8PIvsgKAXn0ZCFiWNfAeqPcjJoqMZbVOPT_pzkdpp-uOCz1hsNeor05HxPiBbl8-vvOm2MbXxtj4YSD-_vDqbG_wd0EIYXQCoXcz4S3iNZOqA59O4sANaELoqgrZpbbvC1Het7jObIZllXWB5I5hBST_jKzjCKlttyEn0Kzq2lR_3xdsRzYxwIro1m70n8gE"/>
+<img class="aspect-square w-full rounded-lg object-cover" data-alt="A photo of Bea Rose from her childhood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJqVp-ZjK3vGPQNbJ0izM5EW_oevc-jODLI0SLKsC2t-g8PhiRx2NPd3IAkQoGDkHVx2igfZ0buj8-rAYKpMwPfwQaksZBdsL-jTI2RAj1w_LdOeav1C-sN7X24LrebkSEbx-8VpnmoGcIkuhQMfW-WejnvnyF5nx4hXqYYw63OCJ70Ed6oBq3IjyHGw2EPtBffzl6c04ocG9_JJn-pzX27HcSWs30149UKLp4juBMUSwzMsnECXxZPhVNgLeip-3RAEud_Vov2g0"/>
+<img class="aspect-square w-full rounded-lg object-cover col-span-2 md:col-span-1" data-alt="Bea Rose on a vacation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5dMDiFuc79d6zWVcMS08bsO9R1ba6ZX6YyebjdmYFnU9hSAzqEBsjpEDMnHmu8RqPA0D-BImhiGjLLd_nurkNvB0dL1pvTewz8neVX6NzrwLbUkulSTHKgP93g-gfty769WRaHl1zKfyUUx_OxP5bKRgpoGh4oMJMNoQfeV4cpN8D0akFJcNEQ2QV3tceAXs0YHAcig61K5sjQlGX9zZVbWj9PrQkPi0SWaViXzkk0xQrfQwLx9A0ZU772uIw5MgC3p34W5TY8BU"/>
+</div>
+</section>
+<section class="py-12 md:py-16">
+<div class="grid grid-cols-1 gap-12 md:grid-cols-2">
+<div>
+<h3 class="text-primary text-2xl font-bold">Reminders</h3>
+<ul class="mt-4 list-disc space-y-2 pl-5">
+<li>Your presence is the greatest gift.</li>
+<li>Please confirm your attendance by November 30, 2025.</li>
+<li>The event will start promptly.</li>
+</ul>
+<div class="mt-8">
+<h3 class="text-primary text-2xl font-bold">Hashtag</h3>
+<p class="mt-2 text-lg">#BeaRoseAt18</p>
+</div>
+</div>
+<div>
+<h3 class="text-primary text-2xl font-bold">Location</h3>
+<p class="mt-2 text-lg">The Grand Hall</p>
+<p>123 Celebration Ave, Dream City, 4567</p>
+<div class="mt-4 aspect-video w-full">
+<img class="h-full w-full rounded-lg object-cover" data-alt="A map showing the location of The Grand Hall" data-location="Dream City" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzabzqe8-cDC2MMU9kHbUK2QeRsQ9sw9vCxmCrHD5x886nxdhwR1uM2Ta2Dfm56c1RJaRcuuvRYxR8k0ycP3vUnxeQDRbpTA5zoILMFnsS9MShepMpkFzgQrVuis7Gd2rQ9_Qg0hau4atNCNJZznMW_kDWN4DDlLbZXkZ2tkSshRtNoGUBqPOMCLyiIIVW8f_ANlIE47GBVOWtrV1muH0eSMnq_ocMLcrU8mhRJsQNY8IT0iEvGAXSDxIsDspJWpOpvWK-9sPARkI"/>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<script>
+    function countdown(expiry) {
+        return {
+            expiry: new Date(expiry).getTime(),
+            days: '0',
+            hours: '00',
+            minutes: '00',
+            seconds: '00',
+            start() {
+                const update = () => {
+                    const now = new Date().getTime();
+                    const diff = this.expiry - now;
+                    if (diff < 0) {
+                        this.days = '0';
+                        this.hours = '00';
+                        this.minutes = '00';
+                        this.seconds = '00';
+                        return;
+                    }
+                    this.days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                    this.hours = String(Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+                    this.minutes = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+                    this.seconds = String(Math.floor((diff % (1000 * 60)) / 1000)).padStart(2, '0');
+                };
+                update();
+                setInterval(update, 1000);
+            },
+        };
+    }
+</script>
+</body></html>
